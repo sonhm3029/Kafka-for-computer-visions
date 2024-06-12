@@ -83,3 +83,23 @@ python test_send.py
 ```sh
 python test_receive.py
 ```
+
+## Run 1 broker, 1 topic, 2 partition, 2 consumer
+
+### Producer
+
+```sh
+python test_send.py
+```
+
+### Consumer 1
+
+```sh
+python consumer1.py
+```
+
+### Consumer 2
+
+```sh
+python consumer2.py
+```
