@@ -2,6 +2,10 @@
 
 In this project, I use kafka docker image. 
 
+## Tutorial:
+
+[Youtube](https://www.youtube.com/watch?v=Hl61x0s3yeQ&list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4&index=1)
+
 ## Environment
 
 - Python=3.9.13
@@ -64,4 +68,18 @@ In my case i use ipconfig and see that my ip-addr is: 192.168.1.138 like in the 
 ```sh
 cd cmak-xxxx 
 bin/cmak -Dconfig.file=conf/application.conf -Dhttp.port=8080
+```
+
+## Run 1 broker, 1 topic, 1 partition, 1 consumer
+
+### Producer
+
+```sh
+python test_send.py
+```
+
+### Consumer
+
+```sh
+python test_receive.py
 ```
